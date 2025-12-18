@@ -21,9 +21,10 @@ shell-utils/
 
 ### 디스크 공간 관리
 
-- [delete-node-modules.sh](scripts/cleanup/delete-node-modules.sh) - Node.js 프로젝트의 node_modules 폴더 정리 ([문서](docs/delete-node-modules.md))
-- [delete-tmp-cache.sh](scripts/cleanup/delete-tmp-cache.sh) - 임시 캐시 디렉토리 정리 ([문서](docs/delete-tmp-cache.md))
-- [delete-vendor-bundle.sh](scripts/cleanup/delete-vendor-bundle.sh) - Ruby 프로젝트의 vendor/bundle 디렉토리 정리 ([문서](docs/delete-vendor-bundle.md))
+- [cleanup.sh](scripts/cleanup/cleanup.sh) - 프로젝트 정리 통합 스크립트 ([문서](docs/cleanup.md))
+  - node_modules, .next, dist, tmp, .cache 등 불필요한 폴더 삭제
+  - tmp/cache, vendor/bundle 경로 패턴 정리
+  - *.log, .DS_Store 등 불필요한 파일 삭제
 
 ### 백업
 
